@@ -233,7 +233,7 @@ def query_knowledge_base(query: str) -> str:
         # Step 2: cosine similarity search in Pinecone
         pc     = Pinecone(api_key=PINECONE_API_KEY)
         index  = pc.Index(PINECONE_INDEX)
-        result = index.query(vector=query_vector, top_k=5, include_metadata=True)
+        result = index.query(vector=query_vector, top_k=20, include_metadata=True)
 
         # Pinecone SDK returns an object — use .matches not .get()
         matches = result.matches
