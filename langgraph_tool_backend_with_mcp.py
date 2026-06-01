@@ -63,7 +63,7 @@ class ChatState(TypedDict):
     messages: Annotated[list[BaseMessage], add_messages]
 
 # -------------------
-# 4. MCP Client
+# 4. MCP Client fastmcp.cloud
 # -------------------
 mcp_client = MultiServerMCPClient({
     "company": {
