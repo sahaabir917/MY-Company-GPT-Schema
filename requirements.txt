@@ -9,6 +9,7 @@ langchain-groq
 langchain-community==0.3.27
 langchain-openai==0.3.28
 langchain-mcp-adapters==0.1.6
+mcp==1.26.0
 python-dotenv==1.1.1
 requests==2.32.4
 aiosqlite
