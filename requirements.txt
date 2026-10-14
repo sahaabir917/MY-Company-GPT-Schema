@@ -13,3 +13,4 @@ python-dotenv==1.1.1
 requests==2.32.4
 aiosqlite
 httpx==0.28.1
+duckduckgo-search==8.1.1
