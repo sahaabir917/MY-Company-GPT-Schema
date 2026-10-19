@@ -20,7 +20,7 @@ print("TOKEN:", os.getenv('MCP_API_KEY'))
 # -------------------
 # 1. LLM
 # -------------------
-llm = ChatGroq(model_name="meta-llama/llama-4-scout-17b-16e-instruct", streaming=True)
+llm = ChatGroq(model_name=os.getenv("GROQ_MODEL", "openai/gpt-oss-120b"), streaming=True)
 
 # -------------------
 # 2. Tools

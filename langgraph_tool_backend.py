@@ -12,6 +12,7 @@ from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 from langchain_core.messages import SystemMessage
 import sqlite3
+import os
 import requests
 
 load_dotenv()
@@ -23,7 +24,7 @@ load_dotenv()
 # 1. LLM
 # -------------------
 # llm = ChatOpenAI()
-llm = ChatGroq(model_name="meta-llama/llama-4-scout-17b-16e-instruct", streaming=False)
+llm = ChatGroq(model_name=os.getenv("GROQ_MODEL", "openai/gpt-oss-120b"), streaming=False)
 # -------------------
 # 2. Tools
 # -------------------
